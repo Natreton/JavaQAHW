@@ -1,0 +1,233 @@
+----------------------------------------------
+Name: Check trianlge can be build with Valid data
+
+Description:
+Triangle can be build by 3 given angles
+
+Prerequisities:
+The sum of the angles must be equal to 180 degree
+Angles must not be equal to 0 degree
+
+Test data:
+Valid angles input
+
+Steps:
+1.Input correct values for each angle
+Expected result:
+Triangle is Valid
+
+----------------------------------------------
+Name: Check trianlge can be build with Invalid data
+
+Description:
+Triangle can be build by 3 given angles
+
+Prerequisities:
+The sum of the angles must be equal to 180 degree
+Angles must not be equal to 0 degree
+
+Test data:
+Input for angles must be: 180; 0; 0.
+
+Steps:
+1.Input values for each angle
+Expected result:
+Triangle is Invalid
+
+----------------------------------------------
+Name: Check trianlge can be build with Invalid data
+
+Description:
+Triangle can be build by 3 given angles
+
+Prerequisities:
+The sum of the angles must be equal to 180 degree
+Angles must not be equal to 0 degree
+
+Test data:
+The Sum of Input values for angles must be more then 180 degree
+and angles must not be equal to 0 degree
+
+Steps:
+1.Input values for each angle
+Expected result:
+Triangle is Invalid
+
+----------------------------------------------
+Name: Check trianlge can be build with Invalid data
+
+Description:
+Triangle can be build by 3 given angles
+
+Prerequisities:
+The sum of the angles must be equal to 180 degree
+Angles must not be equal to 0 degree
+
+Test data:
+The Sum of Input values for angles must be less then 180 degree
+and angles must not be equal to 0 degree
+
+Steps:
+1.Input values for each angle
+Expected result:
+Triangle is Invalid
+
+----------------------------------------------
+Name: Check trianlge is Valid and is Acute
+
+Description:
+To be Acute, all angles must not be more then 90 degree
+
+Prerequisities:
+Triangle must be valid
+The sum of angles must be equal to 180 degree
+
+Test data:
+Valid angles input with values less then 90 degree
+
+
+Steps:
+1.Input correct values for each angle
+Expected result:
+Triangle is Valid and is Acute
+
+----------------------------------------------
+Name: Check trianlge is Valid and is Obtuse
+
+Description:
+To be Obtuse, one of the angle must be more then 90 degree
+
+Prerequisities:
+Triangle must be valid
+The sum of angles must be equal to 180 degree
+
+Test data:
+Valid angles input and one of the angles must be with value more then 90 degree
+
+
+Steps:
+1.Input correct values for each angle
+Expected result:
+Triangle is Valid and is Obtuse
+
+----------------------------------------------
+Name: Check trianlge is Valid and is Right
+
+Description:
+To be Right, one of the angle must be equal to 90 degree
+
+Prerequisities:
+Triangle must be valid
+The sum of angles must be equal to 180 degree
+
+Test data:
+Valid angles input and one of the angles must be equal to 90 degree
+
+
+Steps:
+1.Input correct values for each angle
+Expected result:
+Triangle is Valid and is Right
+
+----------------------------------------------
+Name: Check trianlge is Valid and is Acute and is Equilateral
+
+Description:
+To be Acute and Equilateral, all angles must be equal to 60 degree
+
+Prerequisities:
+Triangle must be valid
+The sum of angles must be equal to 180 degree
+
+Test data:
+Valid angles input with values equal to 60 degree
+
+
+Steps:
+1.Input correct values for each angle
+Expected result:
+Triangle is Valid and is Acute and Equilateral
+
+----------------------------------------------
+Name: Check trianlge is Valid and is Acute and Isosceles
+
+Description:
+An Isosceles triangle also has two angles of the same measure
+To be Acute, all angles must not be more then 90 degree
+
+Prerequisities:
+Triangle must be valid
+The sum of angles must be equal to 180 degree
+
+Test data:
+Valid angles input and two of the angles must be with same value
+All angles value must not be more then 90 degree
+
+
+Steps:
+1.Input correct values for each angle
+Expected result:
+Triangle is Valid and is Acute and Isosceles
+
+----------------------------------------------
+Name: Check trianlge is Valid and is Obtuse and Isosceles
+
+Description:
+An Isosceles triangle also has two angles of the same measure
+To be Obtuse, one of the angles must be more then 90 degree
+
+Prerequisities:
+Triangle must be valid
+The sum of angles must be equal to 180 degree
+
+Test data:
+Valid angles input and two of the angles must be with same value
+One of the angles must be more then 90 degree
+
+
+Steps:
+1.Input correct values for each angle
+Expected result:
+Triangle is Valid and is Obtuse and Isosceles
+
+----------------------------------------------
+Name: Check trianlge is Valid and is Right and Isosceles
+
+Description:
+An Isosceles triangle also has two angles of the same measure
+To be Right, one of the angles must be equal to 90 degree
+
+Prerequisities:
+Triangle must be valid
+The sum of angles must be equal to 180 degree
+
+Test data:
+Valid angles input and two of the angles must be equal to 45 degree
+One of the angles must be equal to 90 degree
+
+
+Steps:
+1.Input correct values for each angle
+Expected result:
+Triangle is Valid and is Right and Isosceles
+
+----------------------------------------------
+Name: Check trianlge is Valid and is Scalene
+
+Description:
+A scalene triangle has all angles of different measure.
+
+Prerequisities:
+Triangle must be valid
+The sum of angles must be equal to 180 degree
+
+Test data:
+Valid angles input 
+
+
+Steps:
+1.Input correct values for each angle
+Expected result:
+Triangle is Valid and is (Depends on degree value) and Scalene
+
+----------------------------------------------
