@@ -12,9 +12,9 @@ public class FourthFromL11 {
          int max = myArr[0]; 
          
          for (i = 1; i < myArr.length; i++) 
-             if (myArr[i] > max) 
+             if (myArr[i] > max){
                  max = myArr[i]; 
-        
+	     }
          return max; 
      } 
 
