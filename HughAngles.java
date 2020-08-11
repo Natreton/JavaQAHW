@@ -4,17 +4,15 @@ import java.util.Scanner;
 
 public class HughAngles {
 
-	public static int checkCondition(int alpha, int beta, int gama) { 
-        // check condition 
-        if (alpha + beta + gama == 180 && alpha > 0 && beta > 0 && gama > 0) 
-            return 1;
-        else  
-            return 0; 
+	public static boolean checkCondition(int alpha, int beta, int gama) {
+		return ((alpha + beta + gama == 180) && alpha > 0 && beta > 0 && gama > 0); 
+    
+	
     } 
 	
-	public static int byInternalAngles(int alpha, int beta, int gama) {
+	public static void byInternalAngles(int alpha, int beta, int gama) {
 		
-		if (alpha + beta + gama == 180 && alpha != 0 && beta != 0 && gama != 0) {
+		if ((alpha + beta + gama == 180) && alpha != 0 && beta != 0 && gama != 0) {
 				
 			if ((alpha + beta == gama || 
 					alpha + gama == beta || 
@@ -40,15 +38,15 @@ public class HughAngles {
 		}
 		
 		else {
-            		System.out.println("Can't form a triangle. ");
+            		System.out.println("Can't form a triangle by given Angles. ");
 			}
 				
-				return 1;
+		
 		
 	}
-	public static int byLengthsOfSides(int alpha, int beta, int gama) {
+	public static void byLengthsOfSides(int alpha, int beta, int gama) {
 		
-		if (alpha + beta + gama == 180 && alpha != 0 && beta != 0 && gama != 0) {
+		if ((alpha + beta + gama == 180) && alpha != 0 && beta != 0 && gama != 0) {
 			
 			if	((alpha == beta &&
 						beta == gama) && (alpha < 90 || beta < 90 || gama < 90))
@@ -66,9 +64,9 @@ public class HughAngles {
 		}
 		
 		else {
-			
+			System.out.println("Can't form triangle sides by given Angles . ");
 			}
-		return 1;
+	
 		
 		
 	}
@@ -90,18 +88,20 @@ public class HughAngles {
 		System.out.print("Gama is:");
 		int gama = scan.nextInt();
 		
-		scan.close(); // ej tova kolko li e vajno ?
+		scan.close();
 		
-		 if (checkCondition(alpha, beta, gama) == 1)  {
-			 System.out.print("The triangle is: Valid. "); 
-			 
-			  byInternalAngles(alpha, beta, gama);
-			 
-			  byLengthsOfSides(alpha, beta, gama);
-			 
-		 }      
-	     else
-	            System.out.print("The triangle is: Invalid. "); 
+		 	if(checkCondition(alpha, beta, gama) == true) {
+		 		
+		 		System.out.print("The triangle is: Valid. "); 
 
+				  byInternalAngles(alpha, beta, gama);
+				 
+				  byLengthsOfSides(alpha, beta, gama);
+		 	}
+		 	else {
+		 		
+		 		System.out.print("The triangle is: Invalid. "); 
+		 	}
+			
 	}
 }
